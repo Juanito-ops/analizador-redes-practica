@@ -1,0 +1,17 @@
+{
+  "1": {
+    "titulo": "¡Primer video de prueba!",
+    "descripcion": "Probando mi sistema automatizado de contenido 🚀 #automation #python",
+    "archivo_video": "video_01.mp4"
+  },
+  "2": {
+    "titulo": "Segundo día de contenido",
+    "descripcion": "Seguimos mejorando el flujo de trabajo diario 🔥 #creador #tecnologia",
+    "archivo_video": "video_02.mp4"
+  },
+  "3": {
+    "titulo": "Tercer día automatizando",
+    "descripcion": "La constancia es la clave del éxito 💡 #crecimiento #redessociales",
+    "archivo_video": "video_03.mp4"
+  }
+}
