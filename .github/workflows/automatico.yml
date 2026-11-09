@@ -1,0 +1,26 @@
+name: Automatizar Metricas Redes
+
+on:
+  workflow_dispatch: # Te permite ejecutarlo manualmente desde la web de GitHub cuando quieras
+  schedule:
+    - cron: '0 9 * * *' # Se ejecutará automáticamente todos los días a las 9:00 AM
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Copiar código del repositorio
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Ejecutar script de seguidores
+        run: python seguidores.py
+
+      - name: Guardar cambios automáticamente en el repositorio
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Actualización automática de métricas diarias"
